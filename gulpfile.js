@@ -11,7 +11,7 @@ gulp.task('clean', () => {
     return del('./dist/**/*');
 });
 
-gulp.task('build', () => {
+gulp.task('build',['clean'], () => {
     const test = gulp
         .src('./src/*')
         .pipe(make('EPU-CB-18'))
@@ -19,4 +19,4 @@ gulp.task('build', () => {
         .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('default', ['clean', 'build']);
+gulp.task('default', ['build']);
