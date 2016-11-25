@@ -1,0 +1,21 @@
+{
+  "name": "contest-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.7",
+    "gulp-zip": "^3.2.0",
+    "js-yaml": "^3.7.0",
+    "merge-stream": "^1.0.1",
+    "through2": "^2.0.1"
+  }
+}
