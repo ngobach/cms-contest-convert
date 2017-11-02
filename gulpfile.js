@@ -8,14 +8,14 @@ const
 
 gulp.task('clean', () => {
     gulpUtil.log('Cleaning ...');
-    return del('./dist/**/*');
+    return del('./dist');
 });
 
-gulp.task('build',['clean'], () => {
+gulp.task('build', ['clean'], () => {
     const test = gulp
         .src('./src/*')
-        .pipe(make('EPU-CB-18'))
-        .pipe(zip('contest.zip'))
+        .pipe(make())
+        // .pipe(zip('contest.zip'))
         .pipe(gulp.dest('./dist/'));
 });
 
